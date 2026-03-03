@@ -16,10 +16,13 @@ The IFC was created from the survey mesh in Blender / Bonsai (ex BlenderBIM); th
 ## Paper
 
 The research is explained in an academic paper to be presented at ISPRS Congress 2026: Bridging Geometric Gaps between Digital Survey and BIM through Open-Source 3D Tiles - IFC Integration (Raphaël Vouilloz, Ken Percy, Nicolas Arellano Risopatron, Sabrina Liu, Philippe Marin, Stephen Fai)
+
 The research was funded in part by the Social Sciences and Humanities Research Council (SSHRC) of Canada, Partnership Talent Program (895-2015-1018), as a participation to the "New Paradigms, New Tools" program of the CIMS Laboratory in Ottawa.
 
 ## Dependencies
 
 3DTilesrendererJS: https://github.com/NASA-AMMOS/3DTilesRendererJS
+
 That Open: https://github.com/ThatOpen/
+
 Three.js: https://threejs.org/

@@ -53,7 +53,7 @@ fragmentIfcLoader.settings.webIfc.COORDINATE_TO_ORIGIN = false;
 //1.2 Load IFC as Fragments :
 
 const file = await fetch(
-  "https://cimsprojects.ca:9000/assets/epfl/fontainebleau.ifc"
+  "https://raw.githubusercontent.com/rvouilloz/hbim-viewer-fontainebleau/main/resources/models/ifc/model.ifc",
 );
 const data = await file.arrayBuffer();
 const buffer = new Uint8Array(data);
@@ -275,7 +275,7 @@ const propertiesPanel = BUI.Component.create(() => {
             }
             hider.set(target.value, discolorationStones);
             const discolorationOpacity = document.getElementById(
-              "discoloration-opacity"
+              "discoloration-opacity",
             );
             if (
               discolorationOpacity !== null &&
@@ -344,12 +344,12 @@ const renderer = world.renderer.three;
 //2.1 Set up
 
 const tilesRenderer = new TilesRenderer(
-  "https://cimsprojects.ca:9000/assets/epfl/tiled-photomesh/tileset.json"
+  "https://raw.githubusercontent.com/rvouilloz/hbim-viewer-fontainebleau/main/resources/models/tiled-photomesh/tileset.json",
 );
 
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath(
-  "https://cimsprojects.ca:9000/assets/epfl/draco/gltf/"
+  "https://raw.githubusercontent.com/rvouilloz/hbim-viewer-fontainebleau/main/resources/draco/gltf/",
 );
 
 const loader = new GLTFLoader(tilesRenderer.manager);
